@@ -9,34 +9,33 @@ heroText: ZLMX的文档
 tagline: <img src="https://v1.jinrishici.com/all.svg" style="max-width:100%; ">
 actions:
   - text: 开始
-    icon: lightbulb
+    icon: rocket
     link: ./demo/
     type: primary
-    
   - text: 附页
-    icon: star
+    icon: file-alt
     link: ./portfolio.md    
 
 features:
-  - title: YUNZAI 搭建教程
-    icon: 
-    details: Liunx,Windows,Termux 搭建方式
+  - title: 系统搭建教程
+    icon: cogs
+    details: 提供全面的系统搭建教程，适用于各种平台
     link: /yunzai/
-
-  - title: 公共 QSIGN
-    icon: 
-    details: 签名服务统计
+  - title: 服务统计
+    icon: bar-chart
+    details: 查看服务的详细统计和数据报告
     link: /qs/
+  - title: 技术指南
+    icon: clipboard-list
+    details: 新手入门和进阶技术指南，帮助你掌握关键技能
+    link: /guide/markdown/
+  - title: 开发资源
+    icon: code-branch
+    details: 资源开发与发布的详细步骤
+    link: /development/
+    
+## 🛠    
 
-  - title: 菜就多练
-    icon: 
-    details: 输不起就别玩
-    link: /zh/guide/markdown/
-
-## 🛠
-
-copyright: false
-footer: 2024 岩王帝君 版权所有 保留一切解释权利
-  <a href="https://beian.miit.gov.cn/" target="_blank">蜀ICP备2024093216号-2</a>
----
-
+footer:
+  copyright: false
+  footer: 2024 岩王帝君 版权所有 保留一切解释权利

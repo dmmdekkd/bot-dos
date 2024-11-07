@@ -1,35 +1,36 @@
-import { oml2dPlugin } from 'vuepress-plugin-oh-my-live2d';
-import { defineUserConfig } from "vuepress";
-import { getDirname, path } from "vuepress/utils";
-import theme from "./theme.js";
+import { oml2dPlugin } from 'vuepress-plugin-oh-my-live2d';  // 导入 Oh My Live2D 插件
+import { defineUserConfig } from 'vuepress';  // 导入 VuePress 配置方法
+import theme from './theme.js';  // 导入主题配置
 
 export default defineUserConfig({
-  base: "/",
-
-  lang: "zh-CN",
-  title: "ZLMX",
-  description: "vuepress-theme-hope 的文档演示",
-
-  plugins: [
-    oml2dPlugin({
-      // 在这里配置选项
-      models: [
-        {
-          path: 'https://model.oml2d.com/rem/model.json',
-          scale: 0.12,
-          position: [-10, 50],
-          stageStyle: {
-            width: 350
-          }
-        }
-      ]
-    })
-
-    //  ...other plugins
-  ],
-
+  base: '/',  // 配置站点的基础路径
+  lang: 'zh-CN',  // 设置站点的语言为简体中文
+  title: 'ZLMX',  // 设置站点标题
+  description: 'vuepress-theme-hope 的文档演示',  // 设置站点描述
   theme,
 
-  // 和 PWA 一起启用
-  // shouldPrefetch: false,
+  plugins: [
+    // 配置 Oh My Live2D 插件，展示一个动态的 Live2D 模型
+    oml2dPlugin({
+      models: [
+        {
+          path: 'https://model.oml2d.com/rem/model.json',  // 模型的路径
+          scale: 0.12,  // 设置模型的缩放比例
+          position: [-10, 50],  // 设置模型的位置
+          stageStyle: {
+            width: 350,  // 设置舞台宽度
+          },
+        }
+      ]
+    }),
+  ],
+
+  shouldPrefetch: false,  // 禁用 PWA 自动预加载
+  themeConfig: {
+    revealjs: {
+      controls: true,  // 显示控制按钮
+      progress: true,  // 显示进度条
+      // 其他 Reveal.js 配置项
+    }
+  }
 });

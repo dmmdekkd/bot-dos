@@ -8,15 +8,51 @@ icon: lightbulb
 
 ## 购买服务器
 
-- 第一步
+选择一个云服务提供商并点击相应按钮：
 
-  - 推荐服务器[腾讯云](https://cloud.tencent.com)[阿里云](https://www.aliyun.com)[华为云](https://activity.huaweicloud.com)等...
+<div style="display: flex; gap: 10px;">
+
+  <a href="https://cloud.tencent.com" target="_blank">
+    <button style="padding: 10px 20px; font-size: 16px; background-color: #0a73ff; color: white; border: none; border-radius: 5px; cursor: pointer;">
+      腾讯云
+    </button>
+  </a>
+
+  <a href="https://www.aliyun.com" target="_blank">
+    <button style="padding: 10px 20px; font-size: 16px; background-color: #ff6a00; color: white; border: none; border-radius: 5px; cursor: pointer;">
+      阿里云
+    </button>
+  </a>
+
+  <a href="https://activity.huaweicloud.com" target="_blank">
+    <button style="padding: 10px 20px; font-size: 16px; background-color: #ff0000; color: white; border: none; border-radius: 5px; cursor: pointer;">
+      华为云
+    </button>
+  </a>
+
+</div>
 
 ## 系统选择
 
-- 第二步
+<h2>系统选择</h2>
 
-  - 推荐选择Ubuntu22,Debian‌12,当然你也可以选择其他liunx发行版系统
+<p>第二步：选择适合的Linux系统版本。推荐以下两个版本，但您也可以选择其他Linux发行版：</p>
+
+<div style="display: flex; gap: 10px; margin-top: 10px;">
+
+  <button style="padding: 10px 20px; font-size: 16px; background-color: #0078D4; color: white; border: none; border-radius: 5px; cursor: pointer;">
+    Ubuntu 22
+  </button>
+
+  <button style="padding: 10px 20px; font-size: 16px; background-color: #A80000; color: white; border: none; border-radius: 5px; cursor: pointer;">
+    Debian 12
+  </button>
+
+  <button style="padding: 10px 20px; font-size: 16px; background-color: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer;">
+    其他Linux发行版
+  </button>
+
+</div>
   
 ## 开始安装
 

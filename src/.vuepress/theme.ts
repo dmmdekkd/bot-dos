@@ -1,195 +1,91 @@
-import { hopeTheme } from "vuepress-theme-hope";
-
-import navbar from "./navbar.js";
-import sidebar from "./sidebar.js";
+import { hopeTheme } from "vuepress-theme-hope";  // 导入 VuePress Hope 主题
+import navbar from "./navbar.js";  // 导入自定义导航栏配置
+import sidebar from "./sidebar.js";  // 导入自定义侧边栏配置
 
 export default hopeTheme({
-  hostname: "https://vuepress-theme-hope-docs-demo.netlify.app",
-
+  hostname: "https://vuepress-theme-hope-docs-demo.netlify.app",  // 网站的根网址
   author: {
-    name: "岩王帝君 版权所有 保留一切解释权利",
-    url: "https://img.vinua.cn/images/I221D.png",
+    name: "岩王帝君 版权所有 保留一切解释权利",  // 作者信息
+    url: "https://img.vinua.cn/images/I221D.png",  // 作者头像URL
   },
+  iconAssets: "fontawesome-with-brands",  // 使用 FontAwesome 图标库
+  logo: "https://img.vinua.cn/images/I221D.png",  // 网站的 logo 图片
+  repo: "https://github.com/dmmdekkd",  // GitHub 仓库链接
+  docsDir: "src",  // 文档源码所在目录
+  
+  // 导航栏与侧边栏配置
+  navbar,  // 引用自定义的导航栏配置
+  sidebar,  // 引用自定义的侧边栏配置
 
-  iconAssets: "fontawesome-with-brands",
-
-  logo: "https://img.vinua.cn/images/I221D.png",
-
-  repo: "https://github.com/dmmdekkd",
-
-  docsDir: "src",
-
-  // 导航栏
-  navbar,
-
-  // 侧边栏
-  sidebar,
-
-  // 页脚
+  // 页脚配置，展示版权和备案信息
   footer: `
     <div>
       <a href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank">蜀ICP备2024093216号-2</a>
     </div>
   `,
-  displayFooter: true,
+  displayFooter: true,  // 启用页脚显示
 
   // 加密配置
   encrypt: {
     config: {
-      "/demo/encrypt.html": ["1234"],
+      "/demo/encrypt.html": ["1234"],  // 对指定页面启用加密
     },
   },
 
-  // 多语言配置
+  // 多语言配置，配置编辑链接
   metaLocales: {
-    editLink: "编辑此页",
+    editLink: "编辑此页",  // 设置“编辑此页”的文本
   },
 
-  // 如果想要实时查看任何改变，启用它。注: 这对更新性能有很大负面影响
-  // hotReload: true,
-
-  // 在这里配置主题提供的插件
+  // 插件配置
   plugins: {
-    // 注意: 仅用于测试! 你必须自行生成并在生产环境中使用自己的评论服务
     comment: {
-      provider: "Giscus",
-      repo: "dmmdekkd/vue-pl",
-      repoId: "R_kgDOMzAgBw",
-      category: "Announcements",
-      categoryId: "DIC_kwDOMzAgB84CijKN",
+      provider: "Giscus",  // 使用 Giscus 评论系统
+      repo: "dmmdekkd/vue-pl",  // Giscus 的 GitHub 仓库
+      repoId: "R_kgDOMzAgBw",  // 仓库 ID
+      category: "Announcements",  // 评论分类
+      categoryId: "DIC_kwDOMzAgB84CijKN",  // 分类 ID
     },
 
     components: {
-      components: ["Badge", "VPCard", "SiteInfo", "FontIcon", "Share"],
+      components: ["Badge", "VPCard", "SiteInfo", "FontIcon", "Share"],  // 配置自定义组件
     },
 
-    // 此处开启了很多功能用于演示，你应仅保留用到的功能。
     mdEnhance: {
-      align: true,
-      attrs: true,
-      codetabs: true,
-      component: true,
-      demo: true,
-      figure: false,
-      imgLazyload: true,
-      imgSize: true,
-      include: true,
-      mark: true,
-      plantuml: true,
-      spoiler: true,
+      // 启用各种 Markdown 增强功能
+      align: true,  // 启用对齐功能
+      attrs: true,  // 启用属性支持
+      component: true,  // 启用 Vue 组件支持
+      demo: true,  // 启用 demo 支持
+      image: true,  // 启用图像支持
+      include: true,  // 启用文件包含功能
+      mark: true,  // 启用标记功能
+      plantuml: true,  // 启用 PlantUML 支持
+      spoiler: true,  // 启用折叠内容（spoiler）支持
       stylize: [
         {
-          matcher: "Recommended",
-          replacer: ({ tag }) => {
-            if (tag === "em")
-              return {
-                tag: "Badge",
-                attrs: { type: "tip" },
-                content: "Recommended",
-              };
-          },
+          matcher: "Recommended",  // 定义匹配规则
+          replacer: ({ tag }) => tag === "em" ? { tag: "Badge", attrs: { type: "tip" }, content: "Recommended" } : undefined,
         },
       ],
-      sub: true,
-      sup: true,
-      tabs: true,
-      tasklist: true,
-      vPre: true,
+      sub: true,  // 启用下标支持
+      sup: true,  // 启用上标支持
+      tab: true,  // 启用标签页（tabs）支持
+      tasklist: true,  // 启用任务列表支持
+      vPre: true,  // 启用 vPre 处理
 
-      // 在启用之前安装 chart.js
-      // chart: true,
-
-      // insert component easily
-
-      // 在启用之前安装 echarts
-      // echarts: true,
-
-      // 在启用之前安装 flowchart.ts
-      // flowchart: true,
-
-      // gfm requires mathjax-full to provide tex support
-      // gfm: true,
-
-      // 在启用之前安装 katex
-      // katex: true,
-
-      // 在启用之前安装 mathjax-full
-      // mathjax: true,
-
-      // 在启用之前安装 mermaid
-      // mermaid: true,
-
-      // playground: {
-      //   presets: ["ts", "vue"],
-      // },
-
-      // 在启用之前安装 reveal.js
-      // revealJs: {
-      //   plugins: ["highlight", "math", "search", "notes", "zoom"],
-      // },
-
-      // 在启用之前安装 @vue/repl
-      // vuePlayground: true,
-
-      // install sandpack-vue3 before enabling it
-      // sandpack: true,
+      // 启用额外功能
+      chart: true,  // 启用 chart.js 图表
+      echarts: true,  // 启用 echarts 图表
+      flowchart: true,  // 启用流程图支持
+      gfm: true,  // 启用 GitHub Flavored Markdown (支持 tex)
+      math: true,  // 启用 MathJax 完整支持
+      mermaid: true,  // 启用 Mermaid 图表
+      playground: {
+        presets: ["ts", "vue"],  // 启用 Playground（支持 ts 和 vue）
+      },
+      vuePlayground: true,  // 启用 Vue Playground
+      sandpack: true,  // 启用 Sandpack Vue3
     },
-
-    // 如果你需要 PWA。安装 @vuepress/plugin-pwa 并取消下方注释
-    // pwa: {
-    //   favicon: "/favicon.ico",
-    //   cacheHTML: true,
-    //   cacheImage: true,
-    //   appendBase: true,
-    //   apple: {
-    //     icon: "/assets/icon/apple-icon-152.png",
-    //     statusBarColor: "black",
-    //   },
-    //   msTile: {
-    //     image: "/assets/icon/ms-icon-144.png",
-    //     color: "#ffffff",
-    //   },
-    //   manifest: {
-    //     icons: [
-    //       {
-    //         src: "/assets/icon/chrome-mask-512.png",
-    //         sizes: "512x512",
-    //         purpose: "maskable",
-    //         type: "image/png",
-    //       },
-    //       {
-    //         src: "/assets/icon/chrome-mask-192.png",
-    //         sizes: "192x192",
-    //         purpose: "maskable",
-    //         type: "image/png",
-    //       },
-    //       {
-    //         src: "/assets/icon/chrome-512.png",
-    //         sizes: "512x512",
-    //         type: "image/png",
-    //       },
-    //       {
-    //         src: "/assets/icon/chrome-192.png",
-    //         sizes: "192x192",
-    //         type: "image/png",
-    //       },
-    //     ],
-    //     shortcuts: [
-    //       {
-    //         name: "Demo",
-    //         short_name: "Demo",
-    //         url: "/demo/",
-    //         icons: [
-    //           {
-    //             src: "/assets/icon/guide-maskable.png",
-    //             sizes: "192x192",
-    //             purpose: "maskable",
-    //             type: "image/png",
-    //           },
-    //         ],
-    //       },
-    //     ],
-    //   },
-    // },
   },
 });

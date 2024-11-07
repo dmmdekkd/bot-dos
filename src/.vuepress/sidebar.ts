@@ -2,16 +2,32 @@ import { sidebar } from "vuepress-theme-hope";
 
 export default sidebar({
   "/": [
-    "portfolio",
+    {
+      text: "简介",
+      icon: "info-circle",
+      link: "/portfolio",
+    },
     {
       text: "目录",
-      icon: "laptop-code",
+      icon: "list-alt",
       prefix: "demo/",
       link: "demo/",
       children: "structure",
     },
-    "/yunzai/",
-    "/qs/",
-    "/guide/",
+    {
+      text: "TRSS 脚本",
+      icon: "cloud-upload-alt",
+      link: "/yunzai/",
+    },
+    {
+      text: "服务统计",
+      icon: "chart-line",
+      link: "/qs/",
+    },
+    {
+      text: "Link",
+      icon: "external-link-alt",
+      link: "/guide/",
+    },
   ],
 });
