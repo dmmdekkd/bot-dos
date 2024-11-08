@@ -1,6 +1,9 @@
 import { oml2dPlugin } from 'vuepress-plugin-oh-my-live2d';  // 导入 Oh My Live2D 插件
 import { defineUserConfig } from 'vuepress';  // 导入 VuePress 配置方法
 import theme from './theme.js';  // 导入主题配置
+import { getDirname, path } from "vuepress/utils";  // 导入 VuePress 的工具函数
+
+const __dirname = getDirname(import.meta.url);
 
 export default defineUserConfig({
   base: '/',  // 配置站点的基础路径
@@ -26,6 +29,11 @@ export default defineUserConfig({
   ],
 
   shouldPrefetch: false,  // 禁用 PWA 自动预加载
+
+  alias: {
+    "@MyComponent": path.resolve(__dirname, "components/expand-contact.vue"),
+  },
+
   themeConfig: {
     revealjs: {
       controls: true,  // 显示控制按钮

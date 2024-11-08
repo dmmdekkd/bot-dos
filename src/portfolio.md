@@ -40,7 +40,7 @@ footer: false
 <MyComponent />
 
 <script setup>
-import MyComponent from "@source/example/expand-contact.vue";
+import MyComponent from "@MyComponent";
 </script>
 
 ---
