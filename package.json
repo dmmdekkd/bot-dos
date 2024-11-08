@@ -20,11 +20,15 @@
   },
   "dependencies": {
     "@vue/repl": "^4.4.2",
+    "axios": "^1.7.7",
     "chart.js": "^4.4.6",
     "echarts": "^5.5.1",
+    "emailjs-com": "^3.2.0",
     "flowchart.ts": "^3.0.1",
+    "leaflet": "^1.9.4",
     "mermaid": "^11.4.0",
     "sandpack-vue3": "^3.1.12",
+    "vue-leaflet": "^0.1.0",
     "vuepress-plugin-oh-my-live2d": "^0.19.3"
   }
 }
