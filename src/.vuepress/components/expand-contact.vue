@@ -22,7 +22,7 @@
           <div v-show="expandedCategory === index" class="contact-list">
             <div v-for="(item, idx) in category.items" :key="idx" class="contact-item">
               <span>{{ item.name }}: {{ item.value }}</span>
-              
+
               <!-- 星星评分功能 -->
               <div class="rating">
                 <span>评分：</span>
@@ -55,7 +55,7 @@
 </template>
 
 <script setup>
-import { ref, computed } from 'vue';
+import { ref, computed, onMounted } from 'vue';
 
 const isContactVisible = ref(true);
 const searchQuery = ref('');
@@ -148,6 +148,7 @@ function exportToCSV() {
   link.href = URL.createObjectURL(blob);
   link.download = 'contacts.csv';
   link.click();
+  URL.revokeObjectURL(link.href);  // 释放 URL
 }
 
 // 设置评分
@@ -162,9 +163,12 @@ function saveRatings() {
 }
 
 // 从本地存储加载评分数据（如果有）
-if (localStorage.getItem('contacts')) {
-  contactMethods.value = JSON.parse(localStorage.getItem('contacts'));
-}
+onMounted(() => {
+  const savedContacts = localStorage.getItem('contacts');
+  if (savedContacts) {
+    contactMethods.value = JSON.parse(savedContacts);
+  }
+});
 </script>
 
 <style scoped>
