@@ -22,6 +22,6 @@ background: rgb(253, 230, 138, 0.15)
 title: 洞宾小窝
 desc: 欢迎来看看~
 logo: http://lvtr.x406.cn/images/avatar.png?v=1731223613756
-link: lvtr.x406.cn
+link: http://lvtr.x406.cn/
 background: rgb(253, 230, 138, 0.15)
 ```
