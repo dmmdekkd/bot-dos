@@ -1,3 +1,5 @@
+// .vuepress/config.js
+
 import { navbar } from "vuepress-theme-hope";
 
 export default navbar([
@@ -40,5 +42,10 @@ export default navbar([
     text: "监控网站",
     icon: "globe",
     link: "https://yunzai-lls.cn/",
+  },
+  {
+    text: "访客统计",
+    icon: "chart-bar",
+    link: "/visitor-counter",  // 这里用一个链接来显示组件
   },
 ]);

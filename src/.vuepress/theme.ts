@@ -48,11 +48,10 @@ export default hopeTheme({
     },
 
     components: {
-      components: ["Badge", "VPCard", "SiteInfo", "FontIcon", "Share"],  // 配置自定义组件
+      components: ["Badge", "VPCard", "SiteInfo", "FontIcon", "Share", "VisitorCounter"],  // 添加 VisitorCounter 组件
     },
 
     mdEnhance: {
-      // 启用各种 Markdown 增强功能
       align: true,  // 启用对齐功能
       attrs: true,  // 启用属性支持
       component: true,  // 启用 Vue 组件支持

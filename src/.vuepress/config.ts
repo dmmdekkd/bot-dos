@@ -35,6 +35,7 @@ export default defineUserConfig({
   alias: {
     "@MyComponent": path.resolve(__dirname, "components/expand-contact.vue"),
     "@VisitorCounter": path.resolve(__dirname, "components/VisitorCounter.vue"),
+    "@VisitorCounte": path.resolve(__dirname, "components/VisitorCounte.vue"),
   },
 
   themeConfig: {
