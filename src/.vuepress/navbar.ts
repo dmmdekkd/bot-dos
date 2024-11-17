@@ -16,7 +16,7 @@ export default navbar([
   {
     text: "目录",
     icon: "list",
-    link: "/demo/",
+    link: "目录.md",
   },
   {
     text: "服务统计",
@@ -26,7 +26,7 @@ export default navbar([
   {
     text: "TRSS 脚本",
     icon: "robot",
-    link: "/yunzai/",
+    link: "/trss/",
   },
   {
     text: "link",

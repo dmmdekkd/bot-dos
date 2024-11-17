@@ -26,6 +26,8 @@
     "emailjs-com": "^3.2.0",
     "flowchart.ts": "^3.0.1",
     "leaflet": "^1.9.4",
+    "markdown-it-anchor": "^9.2.0",
+    "markdown-it-toc-done-right": "^4.2.0",
     "mermaid": "^11.4.0",
     "pg": "^8.13.1",
     "sandpack-vue3": "^3.1.12",

@@ -10,7 +10,7 @@ tagline: <img src="https://v1.jinrishici.com/all.svg" style="max-width:100%; ">
 actions:
   - text: 开始
     icon: rocket
-    link: ./demo/
+    link: 目录.md
     type: primary
   - text: 附页
     icon: file-alt
@@ -34,7 +34,7 @@ features:
     details: 资源开发与发布的详细步骤
     link: /development/
     
-## 🛠    
+## 🛠 
 
 footer:
   copyright: false

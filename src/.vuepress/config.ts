@@ -11,7 +11,7 @@ export default defineUserConfig({
   base: '/',  // 配置站点的基础路径
   lang: 'zh-CN',  // 设置站点的语言为简体中文
   title: 'ZLMX',  // 设置站点标题
-  description: 'vuepress-theme-hope 的文档演示',  // 设置站点描述
+  description: 'ZLMX的文档',  // 设置站点描述
   theme,
 
   plugins: [

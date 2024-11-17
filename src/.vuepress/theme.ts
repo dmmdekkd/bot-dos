@@ -1,18 +1,19 @@
 import { hopeTheme } from "vuepress-theme-hope";  // 导入 VuePress Hope 主题
 import navbar from "./navbar.js";  // 导入自定义导航栏配置
 import sidebar from "./sidebar.js";  // 导入自定义侧边栏配置
+import { catalogPlugin } from '@vuepress/plugin-catalog';  // 导入目录插件
 
 export default hopeTheme({
   hostname: "https://vuepress-theme-hope-docs-demo.netlify.app",  // 网站的根网址
   author: {
-    name: "岩王帝君 版权所有 保留一切解释权利",  // 作者信息
-    url: "https://img.vinua.cn/images/I221D.png",  // 作者头像URL
+    name: "",  // 作者信息
+    url: "1.png",  // 作者头像URL
   },
   iconAssets: "fontawesome-with-brands",  // 使用 FontAwesome 图标库
-  logo: "https://img.vinua.cn/images/I221D.png",  // 网站的 logo 图片
+  logo: "1.png",  // 网站的 logo 图片
   repo: "https://github.com/dmmdekkd",  // GitHub 仓库链接
   docsDir: "src",  // 文档源码所在目录
-  
+
   // 导航栏与侧边栏配置
   navbar,  // 引用自定义的导航栏配置
   sidebar,  // 引用自定义的侧边栏配置
@@ -20,8 +21,9 @@ export default hopeTheme({
   // 页脚配置，展示版权和备案信息
   footer: `
     <div>
-      <a href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank">蜀ICP备2024093216号-2</a>
-    </div>
+  <span>Copyright © 2024 岩王帝君 版权所有 保留一切解释权利</span><br>
+  <a href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank">蜀ICP备2024093216号-2</a>
+</div>
   `,
   displayFooter: true,  // 启用页脚显示
 
@@ -48,7 +50,7 @@ export default hopeTheme({
     },
 
     components: {
-      components: ["Badge", "VPCard", "SiteInfo", "FontIcon", "Share", "VisitorCounter"],  // 添加 VisitorCounter 组件
+      components: ["Badge", "VPCard", "VPBanner", "SiteInfo", "FontIcon", "Share", "VisitorCounter"],  // 添加 VisitorCounter 组件
     },
 
     mdEnhance: {
@@ -69,6 +71,7 @@ export default hopeTheme({
       ],
       sub: true,  // 启用下标支持
       sup: true,  // 启用上标支持
+      codeTabs: true,
       tab: true,  // 启用标签页（tabs）支持
       tasklist: true,  // 启用任务列表支持
       vPre: true,  // 启用 vPre 处理
@@ -85,6 +88,17 @@ export default hopeTheme({
       },
       vuePlayground: true,  // 启用 Vue Playground
       sandpack: true,  // 启用 Sandpack Vue3
+    },
+
+    // 添加目录插件配置
+    catalog: catalogPlugin({
+      // 你的选项
+    }),
+
+    // 添加 markdownTab 插件配置
+    markdownTab: {
+      codeTabs: true,
+      tabs: true,
     },
   },
 });

@@ -4,10 +4,12 @@ icon:
 ---
 ---
 ## <font color="OrangeRed">ZLMX 签名服务</font>
->- [http://qs.yunzaibot.cn:9090/?key=1314520](http://qs.yunzaibot.cn:9090/?key=1314520)
+>- [http://api.lzqxcd.cn/?key=3448585471
+](http://api.lzqxcd.cn/?key=3448585471
+)
 >
 >
-><iframe src="http://qs.yunzaibot.cn:9090/?key=1314520" width="300" height="300"></iframe>
+><iframe src="http://api.lzqxcd.cn/?key=3448585471" width="300" height="300"></iframe>
 >
 ---
 

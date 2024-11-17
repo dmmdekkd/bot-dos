@@ -11,13 +11,13 @@ export default sidebar({
       text: "目录",
       icon: "list-alt",
       prefix: "demo/",
-      link: "demo/",
+      link: "目录.md",
       children: "structure",
     },
     {
       text: "TRSS 脚本",
       icon: "cloud-upload-alt",
-      link: "/yunzai/",
+      link: "/trss/",
     },
     {
       text: "服务统计",
