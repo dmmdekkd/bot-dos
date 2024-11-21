@@ -15,14 +15,14 @@ export default sidebar({
       children: "structure",
     },
     {
-      text: "TRSS 脚本",
+      text: "YZ全系列搭建教程",
       icon: "cloud-upload-alt",
-      link: "/trss/",
+      link: "/yunzai/目录.md",
     },
     {
       text: "服务统计",
       icon: "chart-line",
-      link: "/qs/",
+      link: "/yunzai/qs/",
     },
     {
       text: "Link",

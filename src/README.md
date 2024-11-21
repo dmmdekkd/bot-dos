@@ -17,25 +17,21 @@ actions:
     link: ./portfolio.md    
 
 features:
-  - title: 系统搭建教程
+  - title: YZ全系搭建教程
     icon: cogs
-    details: 提供全面的系统搭建教程，适用于各种平台
-    link: /yunzai/
+    details: 适用于各种平台
+    link: /yunzai/目录.md
   - title: 服务统计
     icon: bar-chart
     details: 查看服务的详细统计和数据报告
-    link: /qs/
-  - title: 技术指南
+    link: /yunzai/qs/
+  - title: 我的世界启动器
     icon: clipboard-list
-    details: 新手入门和进阶技术指南，帮助你掌握关键技能
-    link: /guide/markdown/
+    details: 待实现
+    link: /我的世界/目录.md
   - title: 开发资源
     icon: code-branch
     details: 资源开发与发布的详细步骤
     link: /development/
-    
+---        
 ## 🛠 
-
-footer:
-  copyright: false
-  footer: 2024 岩王帝君 版权所有 保留一切解释权利

@@ -33,9 +33,7 @@ export default defineUserConfig({
   shouldPrefetch: false,  // 禁用 PWA 自动预加载
 
   alias: {
-    "@MyComponent": path.resolve(__dirname, "components/expand-contact.vue"),
-    "@VisitorCounter": path.resolve(__dirname, "components/VisitorCounter.vue"),
-    "@VisitorCounte": path.resolve(__dirname, "components/VisitorCounte.vue"),
+    "@MyComponent": path.resolve(__dirname, "components/MyComponent.vue"),
   },
 
   themeConfig: {

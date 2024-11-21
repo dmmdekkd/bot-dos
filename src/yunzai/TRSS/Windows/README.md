@@ -3,9 +3,9 @@ title: Windows
 icon: lightbulb
 ---
 
-## 安装MYSY2
+## 准备工作
 
-1. 步骤1
+### 安装MYSY2
 
 <VPBanner
   title="安装MYSY2"
@@ -18,31 +18,23 @@ icon: lightbulb
   ]'
 />
 
-2. 步骤2
+## 开始
 
-**一直点NEXT**
-![ ](/images/TRSS/Windows/1/1.png)
+### 一直点NEXT
 
-
+<img src="/images/TRSS/Windows/1/1.png" alt="1" style="border-radius: 10px; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);">
 
 ### 执行TRSS Script
-
-1. 步骤1
-  
-   使用TRSS Script脚本
 
    ```bash
    bash <(curl -L gitee.com/TimeRainStarSky/TRSS_AllBot/raw/main/Install.sh)
    ```
 
-2. 步骤2
+### 脚本安装完成，启动命令tsab
 
-  脚本安装完成，启动命令`"tsab"`
-   ![1](/images/TRSS/Windows/1/2.png)
+<img src="/images/TRSS/Windows/1/2.png" alt="1" style="border-radius: 10px; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);">
 
-3. 步骤3
- 
-   启动命令
+## 启动命令
 
    ```bash
    tsab

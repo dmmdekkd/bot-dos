@@ -21,12 +21,12 @@ export default navbar([
   {
     text: "服务统计",
     icon: "chart-line",
-    link: "/qs/",
+    link: "/yunzai/qs/",
   },
   {
-    text: "TRSS 脚本",
+    text: "YZ全系列搭建教程",
     icon: "robot",
-    link: "/trss/",
+    link: "/yunzai/目录.md",
   },
   {
     text: "link",
