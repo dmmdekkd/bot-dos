@@ -1,4 +1,3 @@
-// vuepress.config.js
 import { oml2dPlugin } from 'vuepress-plugin-oh-my-live2d';  // 导入 Oh My Live2D 插件
 import { defineUserConfig } from 'vuepress';  // 导入 VuePress 配置方法
 import theme from './theme.js';  // 导入主题配置
@@ -41,7 +40,15 @@ export default defineUserConfig({
       controls: true,  // 显示控制按钮
       progress: true,  // 显示进度条
       // 其他 Reveal.js 配置项
-    }
+    },
+    head: [
+      // 注入外部脚本
+      ['script', { 
+        defer: true, 
+        src: 'https://luanj.vercel.app/script.js', 
+        'data-website-id': 'cd8745ee-513b-43b9-96a5-52d3a2cf3e01' 
+      }]
+    ]
   },
 
   // 合并 Vite 配置到 VuePress 配置文件中
