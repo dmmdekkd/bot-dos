@@ -41,7 +41,7 @@ export default navbar([
   {
     text: "监控网站",
     icon: "globe",
-    link: "https://yunzai-lls.cn/",
+    link: "https://luanj.vercel.app/share/H05Ts1KcTWsipA1I/yunzai-bot.cn",
   },
   {
     text: "访客统计",
