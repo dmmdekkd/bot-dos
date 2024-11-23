@@ -20,10 +20,10 @@ export default defineUserConfig({
     // 配置 Umami Analytics 插件
     umamiAnalyticsPlugin({
       id: 'cd8745ee-513b-43b9-96a5-52d3a2cf3e01', // 网站 ID
-      link: 'https://luanj.vercel.app/script.js', // 跟踪脚本的完整 URL
+      link: 'https://status.yunzai-bot.cn/script.js', // 跟踪脚本的完整 URL
       autoTrack: true, // 是否启用自动追踪
       cache: true, // 是否缓存追踪数据
-      hostUrl: 'https://luanj.vercel.app', // Umami 实例主机地址
+      hostUrl: 'https://status.yunzai-bot.cn', // Umami 实例主机地址
     }),
 
     // 配置 Oh My Live2D 插件
