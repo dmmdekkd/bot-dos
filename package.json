@@ -12,8 +12,9 @@
   },
   "devDependencies": {
     "@vuepress/bundler-vite": "2.0.0-rc.18",
-    "@vuepress/plugin-revealjs": "2.0.0-rc.60",
     "@vuepress/plugin-catalog": " 2.0.0-rc.10",
+    "@vuepress/plugin-revealjs": "2.0.0-rc.60",
+    "@vuepress/plugin-umami-analytics": "2.0.0-rc.61",
     "sass-embedded": "^1.79.5",
     "vue": "^3.5.12",
     "vuepress": "2.0.0-rc.18",

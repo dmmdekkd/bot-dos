@@ -116,16 +116,4 @@ export default hopeTheme({
       },
     },
   },
-
-  // 额外添加的 HTML 头部元素
-  head: [
-    [
-      "script",
-      {
-        defer: true,
-        src: "https://luanj.vercel.app/script.js",
-        "data-website-id": "cd8745ee-513b-43b9-96a5-52d3a2cf3e01"
-      }
-    ]
-  ]
 });
