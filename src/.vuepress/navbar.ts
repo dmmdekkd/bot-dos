@@ -41,7 +41,7 @@ export default navbar([
   {
     text: "监控网站",
     icon: "globe",
-    link: "https://status.yunzai-bot.cn/share/Kqbp6yKWNfMXft4y/yunzai-bot.cn",
+    link: "https://status.yunzai-bot.cn/share/EnRtewSV2otz7pZ5/yunzai-bot.cn",
   },
   {
     text: "访客统计",
