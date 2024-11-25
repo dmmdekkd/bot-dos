@@ -52,7 +52,7 @@ export default defineComponent({
     return {
       runningTimeMessage: "", // 当前运行时间消息
       navbarClass: "", // 导航栏样式类名
-      isVisible: true, // 控制计时器和Gitee按钮是否可见，默认显示
+      isVisible: false, // 默认为关闭状态
     };
   },
   props: {
