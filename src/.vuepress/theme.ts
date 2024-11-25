@@ -2,6 +2,7 @@ import { hopeTheme } from "vuepress-theme-hope"; // 导入 VuePress Hope 主题
 import navbar from "./navbar.js"; // 导入自定义导航栏配置
 import sidebar from "./sidebar.js"; // 导入自定义侧边栏配置
 import { catalogPlugin } from '@vuepress/plugin-catalog'; // 导入目录插件
+import { searchProPlugin } from "vuepress-plugin-search-pro";
 
 export default hopeTheme({
   hostname: "https://vuepress-theme-hope-docs-demo.netlify.app", // 网站的根网址
@@ -33,6 +34,8 @@ export default hopeTheme({
       "/demo/encrypt.html": ["1234"], // 对指定页面启用加密
     },
   },
+  
+  fullscreen: true,
 
   // 多语言配置，配置编辑链接
   metaLocales: {
@@ -88,9 +91,8 @@ export default hopeTheme({
       sandpack: true, // 启用 Sandpack Vue3
     },
 
-    // 添加目录插件配置
     catalog: catalogPlugin({
-      // 你的选项
+      // 目录插件选项
     }),
 
     markdownTab: {
@@ -115,5 +117,16 @@ export default hopeTheme({
         },
       },
     },
+
+    searchPro: searchProPlugin({
+      // 搜索插件选项
+            customFields: [
+        {
+          name: "author",
+          getter: (page) => page.frontmatter.author,
+          formatter: "作者：$content",
+        },
+      ],
+    }),
   },
 });

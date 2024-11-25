@@ -1,1 +1,30 @@
-// place your custom styles here
+/* 为所有图片添加圆角、阴影和悬浮效果 */
+img {
+  border-radius: 10px;  /* 添加圆角 */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);  /* 添加阴影 */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);  /* 添加文字阴影 */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;  /* 添加平滑过渡效果 */
+}
+
+img:hover {
+  transform: scale(1.05);  /* 悬浮时轻微放大图片 */
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);  /* 增加阴影效果 */
+}
+
+/* 为特定类的图片添加圆角、阴影和悬浮效果 */
+img.rounded-shadow {
+  border-radius: 15px;  /* 自定义圆角 */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);  /* 自定义阴影 */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);  /* 自定义文字阴影 */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;  /* 添加平滑过渡效果 */
+}
+
+img.rounded-shadow:hover {
+  transform: scale(1.05);  /* 悬浮时轻微放大图片 */
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);  /* 增加阴影效果 */
+}
+
+/* 如果有标题或描述，给文字添加阴影 */
+img + h2, img + p {
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);  /* 给紧跟在图片后的标题或描述添加阴影 */
+}

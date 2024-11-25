@@ -19,14 +19,14 @@ export default navbar([
     link: "目录.md",
   },
   {
-    text: "服务统计",
-    icon: "chart-line",
-    link: "/yunzai/qs/",
-  },
-  {
-    text: "YZ全系列搭建教程",
+    text: "YZ搭建",
     icon: "robot",
     link: "/yunzai/目录.md",
+  },  
+  {
+    text: "Qsign",
+    icon: "chart-line",
+    link: "/yunzai/qs/",
   },
   {
     text: "link",
@@ -39,13 +39,8 @@ export default navbar([
     link: "/yl/",
   },
   {
-    text: "监控网站",
+    text: "访客统计",
     icon: "globe",
     link: "https://status.yunzai-bot.cn/share/EnRtewSV2otz7pZ5/yunzai-bot.cn",
-  },
-  {
-    text: "访客统计",
-    icon: "chart-bar",
-    link: "/visitor-counter",  // 这里用一个链接来显示组件
   },
 ]);

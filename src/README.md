@@ -21,17 +21,17 @@ features:
     icon: cogs
     details: 适用于各种平台
     link: /yunzai/目录.md
-  - title: 服务统计
+  - title: Qsign
     icon: bar-chart
-    details: 查看服务的详细统计和数据报告
+    details: 免费开放的Qsign
     link: /yunzai/qs/
   - title: 我的世界启动器
     icon: clipboard-list
     details: 待实现
-    link: /我的世界/目录.md
+    link: /wdsj/目录.md
   - title: 开发资源
     icon: code-branch
-    details: 资源开发与发布的详细步骤
+    details: 资源
     link: /development/
 ---        
 ## 🛠 

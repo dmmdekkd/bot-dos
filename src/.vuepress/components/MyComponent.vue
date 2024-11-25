@@ -8,10 +8,9 @@
       🔍 正在检查：{{ checkingProvider }}，请稍候...
     </div>
 
-    <div v-for="(message, index) in messages" :key="index" class="message" :class="{ 'error-message': message.isError }">
+    <div v-for="(message, index) in messages" :key="index" class="message-content" :class="{ 'error-message': message.isError }">
       <div v-html="message.content"></div>
     </div>
-
   </div>
 </template>
 
@@ -78,39 +77,29 @@ export default {
     },
     async fetchSignList() {
       try {
-        // Show loading message
+        // 显示加载信息
         this.showLoadingMessage("🌟 欢迎使用");
 
-        // Display initial list info
+        // 显示初始列表信息
         this.displayMessage("🌐 本地签名 API 列表：");
-
-        // 修改这部分代码，直接显示带有复制按钮的内容
-        const curlCommand = `curl -sL Gitee.com/haanxuan/QSign/raw/main/ver | bash`;
-        const messageContent = `
-          📄 提示: ICQQ 版本≤0.6.10的用户请在根目录执行以下脚本添加协议配置：
-          <div class="copy-container">
-            <pre id="curl-command">${curlCommand}</pre>
-        `;
-        
-        this.displayMessage(messageContent);
 
         const providers = this.signData;
         const updateTime = this.signData.date || "未知";
         let current = 0;
 
         for (const [provider, providerInfo] of Object.entries(providers)) {
-          if (provider === "date") continue; // Skip date info
+          if (provider === "date") continue; // 跳过日期信息
           current++;
 
-          // Set checking provider message
+          // 设置当前正在检查的提供者信息
           this.checkingProvider = provider;
           await this.displayProviderInfo(provider, providerInfo);
 
-          // Reset checking provider after completion
+          // 完成检查后重置正在检查的提供者
           this.checkingProvider = null;
         }
 
-        // Display data update time
+        // 显示数据更新时间
         this.displayMessage(`📅 数据更新于: ${updateTime}`);
         this.loading = false;
 
@@ -121,10 +110,10 @@ export default {
     },
     async displayProviderInfo(provider, providerInfo) {
       try {
-        // First, display provider's memo and name after all API checks
+        // 先显示提供者的说明和名称，接着进行API检查
         const checkResults = await this.checkLocalApiStatus(providerInfo);
 
-        // After checking all APIs, display provider information and results
+        // 在检查完所有API后，显示提供者信息和检查结果
         this.displayMessage(`💡 提供者: ${provider}`);
         if (providerInfo.memo) {
           this.displayMessage(`📝 说明: ${providerInfo.memo}`);
@@ -134,16 +123,6 @@ export default {
       } catch (error) {
         this.displayMessage(`❌ 无法检查提供者 ${provider} 的状态。`, true);
       }
-    },
-
-    // 复制到剪贴板
-    copyToClipboard() {
-      const curlCommand = document.getElementById("curl-command").innerText;
-      navigator.clipboard.writeText(curlCommand).then(() => {
-        alert("命令已复制到剪贴板！");
-      }).catch(err => {
-        alert("复制失败，请手动复制！");
-      });
     }
   },
   mounted() {
@@ -165,14 +144,8 @@ h1 {
   color: #333;
 }
 
-.message {
-  background-color: #fff;
-  padding: 10px;
+.message-content {
   margin-bottom: 10px;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  overflow-y: auto;
-  max-height: 200px;
   word-wrap: break-word;
 }
 
@@ -180,24 +153,6 @@ h1 {
   text-align: center;
   font-size: 18px;
   color: #888;
-}
-
-.copy-container {
-  display: flex;
-  align-items: center;
-  margin-top: 20px;
-}
-
-pre {
-  background-color: #f4f4f4;
-  padding: 10px;
-  border-radius: 5px;
-  white-space: pre-wrap;
-  word-wrap: break-word;
-  margin: 0;
-  overflow-x: auto;
-  max-width: 100%;
-  box-sizing: border-box;
 }
 
 button {

@@ -15,12 +15,12 @@ export default sidebar({
       children: "structure",
     },
     {
-      text: "YZ全系列搭建教程",
+      text: "YZ搭建",
       icon: "cloud-upload-alt",
       link: "/yunzai/目录.md",
     },
     {
-      text: "服务统计",
+      text: "Qsign",
       icon: "chart-line",
       link: "/yunzai/qs/",
     },
