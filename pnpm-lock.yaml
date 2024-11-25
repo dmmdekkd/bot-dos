@@ -56,6 +56,9 @@ importers:
       vue-leaflet:
         specifier: ^0.1.0
         version: 0.1.0
+      vue-router:
+        specifier: ^4.4.5
+        version: 4.4.5(vue@3.5.13)
       vuepress-plugin-oh-my-live2d:
         specifier: ^0.19.3
         version: 0.19.3(vuepress@2.0.0-rc.18(@vuepress/bundler-vite@2.0.0-rc.18(@types/node@22.9.3)(sass-embedded@1.81.0))(vue@3.5.13))
