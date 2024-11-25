@@ -13,12 +13,12 @@
   "devDependencies": {
     "@vuepress/bundler-vite": "2.0.0-rc.18",
     "@vuepress/plugin-back-to-top": "^1.9.10",
-    "@vuepress/plugin-catalog": " 2.0.0-rc.10",
+    "@vuepress/plugin-catalog": "2.0.0-rc.10",
     "@vuepress/plugin-revealjs": "2.0.0-rc.61",
     "@vuepress/plugin-shiki": "2.0.0-rc.0",
     "@vuepress/plugin-umami-analytics": "2.0.0-rc.61",
-    "sass-embedded": "^1.79.5",
-    "vue": "^3.5.12",
+    "sass-embedded": "^1.81.0",
+    "vue": "^3.5.13",
     "vuepress": "2.0.0-rc.18",
     "vuepress-plugin-meting": "^0.3.3",
     "vuepress-plugin-search-pro": "2.0.0-rc.59",
@@ -39,8 +39,9 @@
     "pg": "^8.13.1",
     "sandpack-vue3": "^3.1.12",
     "store": "^2.0.12",
-    "vite": "^5.4.10",
+    "vite": "^5.4.11",
     "vue-leaflet": "^0.1.0",
-    "vuepress-plugin-oh-my-live2d": "^0.19.3"
+    "vuepress-plugin-oh-my-live2d": "^0.19.3",
+    "vuepress-shared": "2.0.0-rc.59"
   }
 }
