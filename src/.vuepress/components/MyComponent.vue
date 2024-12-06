@@ -27,7 +27,7 @@ export default {
         "date": "2024-11-21",
         "dmmdekkd": {
           "memo": "无限制免费使用",
-          "9090": "https://api.lzqxcd.cn/?key=0852369"
+          "9090": "http://api.yunzaibot.cn/?key=0852369"
         },
         "zhaodice": {
           "memo": "签名除了(5)都要挂梯子",

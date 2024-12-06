@@ -79,6 +79,7 @@ export default hopeTheme({
       tasklist: true, // 启用任务列表支持
       vPre: true, // 启用 vPre 处理
       chart: true, // 启用 chart.js 图表
+      footnote: true,
       echarts: true, // 启用 echarts 图表
       flowchart: true, // 启用流程图支持
       gfm: true, // 启用 GitHub Flavored Markdown (支持 tex)
