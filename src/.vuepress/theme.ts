@@ -8,10 +8,10 @@ export default hopeTheme({
   hostname: "https://vuepress-theme-hope-docs-demo.netlify.app", // 网站的根网址
   author: {
     name: "", // 作者信息
-    url: "1.png", // 作者头像URL
+
   },
   iconAssets: "fontawesome-with-brands", // 使用 FontAwesome 图标库
-  logo: "1.png", // 网站的 logo 图片
+
   repo: "https://github.com/dmmdekkd", // GitHub 仓库链接
   docsDir: "src", // 文档源码所在目录
 
@@ -22,6 +22,7 @@ export default hopeTheme({
   // 页脚配置，展示版权和备案信息
   footer: `
     <div>
+      <a href="/">|返回主页|</a><a href="/">|关于我|</a><br>
       <span>Copyright © 2024 岩王帝君 版权所有 保留一切解释权利</span><br>
       <a href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank">蜀ICP备2024093216号-2</a>
     </div>
@@ -99,7 +100,7 @@ export default hopeTheme({
     markdownTab: {
       codeTabs: true,
       tabs: true,
-    },
+    },    
 
     copyCode: {
       showInMobile: true, // 在移动设备上显示复制按钮

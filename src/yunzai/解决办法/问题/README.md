@@ -1,6 +1,6 @@
 ---
 title: 遇到问题？
-icon: lightbulb
+icon: search
 ---
 
 ## 加我

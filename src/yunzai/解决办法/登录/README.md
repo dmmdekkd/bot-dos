@@ -1,4 +1,4 @@
 ---
 title: 登录教程
-icon: lightbulb
+icon: sign-in-alt
 ---

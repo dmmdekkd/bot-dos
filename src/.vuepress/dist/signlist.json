@@ -1,0 +1,23 @@
+{
+  "date": "2024-11-21",
+  "dmmdekkd": {
+    "memo": "无限制免费使用",
+    "9090": "https://api.lzqxcd.cn/?key=0852369"
+  },
+  "zhaodice": {
+    "memo": "签名除了(5)都要挂梯子",
+    "9055-910-1": "https://qsign.trpgbot.com",
+    "9055-910-2": "http://qsign-v3.trpgbot.com",
+    "9055-910-3": "https://qsign.chahuyun.cn",
+    "9055-910-4": "https://qsign.chahuyun.cn?key=miraibbs",
+    "9055-910-5": "https://zyr15r-astralqsign.hf.space"
+  },
+  "豆花": {
+    "memo": "核心服务由豆花提供，这里是负载均衡站由其他人提供，核心服务基于HOOK实现",
+    "910": "https://q-sign.wuliya.cn"
+  },
+  "寒暄": {
+    "memo": "暂时停止服务，请查看 QSign.icu 更换服务地址，可通过脚本一键配置",
+    "9070": "https://api.qsign.icu/?key=Free"
+  }
+}

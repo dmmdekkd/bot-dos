@@ -1,6 +1,6 @@
 ---
 title: 友情链接
-icon: laptop-code
+icon: link
 ---
 ```component VPCard
 title: YUNZAIBOT
@@ -25,3 +25,8 @@ logo: http://lvtr.x406.cn/images/avatar.png?v=1731223613756
 link: http://lvtr.x406.cn/
 background: rgb(253, 230, 138, 0.15)
 ```
+
+::: warning 提示
+想添加友链到本网站的,发送<code>网站链接</code>到评论区即可
+:::
+  

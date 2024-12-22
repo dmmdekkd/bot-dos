@@ -20,6 +20,7 @@ const PreviewImage = defineAsyncComponent(() => import('./components/PreviewImag
 const HeroContent = defineAsyncComponent(() => import('./components/HeroContent.vue'));
 const yx = defineAsyncComponent(() => import('./components/yx.vue'));
 const jz = defineAsyncComponent(() => import('./components/jz.vue'));
+const 播放 = defineAsyncComponent(() => import('./components/播放.vue'));
 
 export default defineClientConfig({
   enhance({ app, router, siteData }) {
@@ -40,7 +41,6 @@ export default defineClientConfig({
     HeroHitokoto,
     NavMusic,
     BlogBeautify,
-    BlogBg,
     PreviewImage,
     // ...
   ],

@@ -1,27 +1,12 @@
 <template>
   <div>
-    <!-- 包裹 Gitee 按钮和计时器的容器 -->
+    <!-- 包裹计时器的容器 -->
     <div 
       v-if="isVisible" 
       :style="positionStyle" 
       @click="toggleVisibility" 
       class="container"
     >
-      <!-- Gitee 链接图标，放置在计时器上方 -->
-      <div class="gitee-link-container">
-        <a 
-          class="vp-repo-link" 
-          href="https://gitee.com/hylexus/jt-framework" 
-          target="_blank" 
-          rel="noopener noreferrer" 
-          aria-label="Gitee"
-        >
-          <GiteeIcon 
-            style="width: 1.25rem; height: 1.25rem; vertical-align: middle; fill: #000000;" 
-          />
-        </a>
-      </div>
-
       <!-- 计时器和导航栏 -->
       <div class="timer-container">
         <div v-if="runningTimeMessage" class="timer-message">{{ runningTimeMessage }}</div>
@@ -42,23 +27,21 @@
 </template>
 
 <script>
-import { defineComponent, h, resolveComponent } from "vue";
-import { GiteeIcon } from "vuepress-shared/client"; // 引入 Gitee 图标组件
+import { defineComponent } from "vue";
 
 export default defineComponent({
   name: "RunningTimeFooter",
-  components: { GiteeIcon },
   data() {
     return {
-      runningTimeMessage: "", // 当前运行时间消息
-      navbarClass: "", // 导航栏样式类名
-      isVisible: false, // 默认为关闭状态
+      runningTimeMessage: "",
+      navbarClass: "",
+      isVisible: false,
     };
   },
   props: {
     startDate: {
       type: Date,
-      default: () => new Date("2024-11-25"), // 起始日期
+      default: () => new Date("2024-11-25"),
     },
     messages: {
       type: Object,
@@ -68,12 +51,12 @@ export default defineComponent({
     },
     isTransparent: {
       type: Boolean,
-      default: true, // 是否使用透明导航栏
+      default: true,
     },
     position: {
       type: Object,
       default: () => ({
-        bottom: "10px", // 默认位置为页面右下角
+        bottom: "10px",
         right: "10px",
       }),
     },
@@ -83,7 +66,7 @@ export default defineComponent({
       return {
         position: "fixed",
         ...this.position,
-        zIndex: 1000, // 与Gitee图标层级保持一致
+        zIndex: 1000,
         cursor: "pointer",
       };
     },
@@ -92,7 +75,7 @@ export default defineComponent({
         position: "fixed",
         bottom: this.position.bottom,
         right: "0px",
-        zIndex: 1001, // 箭头按钮的层级更高
+        zIndex: 1001,
         cursor: "pointer",
       };
     },
@@ -135,22 +118,11 @@ export default defineComponent({
 </script>
 
 <style scoped>
-/* 包裹 Gitee 按钮和计时器的容器样式 */
 .container {
   position: relative;
   z-index: 1000;
 }
 
-/* Gitee 链接图标的容器样式 */
-.gitee-link-container {
-  position: absolute;
-  top: -35px; /* 将 Gitee 按钮放在计时器上方 */
-  left: 50%;
-  transform: translateX(-50%); /* 居中对齐 */
-  z-index: 1000;
-}
-
-/* 计时器容器样式 */
 .timer-container {
   background-color: rgba(255, 255, 255, 0.9);
   padding: 10px;
@@ -160,24 +132,20 @@ export default defineComponent({
   position: relative;
 }
 
-/* 计时器消息样式 */
 .timer-message {
   font-size: 14px;
   color: #333;
 }
 
-/* 透明导航栏样式 */
 .transparent-navbar {
   background: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(10px);
 }
 
-/* 普通导航栏样式 */
 .navbar {
   background: #fff;
 }
 
-/* 贴边箭头样式 */
 .arrow-button {
   background-color: #007bff;
   color: #fff;
@@ -190,18 +158,5 @@ export default defineComponent({
 
 .arrow-button:hover {
   background-color: #0056b3;
-}
-
-/* Gitee 图标链接 */
-.vp-repo-link {
-  display: inline-block;
-  margin: auto;
-  padding: 6px;
-  color: var(--dark-grey);
-  line-height: 1;
-}
-
-.vp-repo-link:hover, .vp-repo-link:active {
-  color: var(--theme-color);
 }
 </style>

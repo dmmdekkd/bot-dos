@@ -1,5 +1,5 @@
 ---
 title: plugin类
-icon: lightbulb
+icon: puzzle-piece
 ---
 

@@ -8,6 +8,12 @@ importers:
 
   .:
     dependencies:
+      '@fortawesome/free-solid-svg-icons':
+        specifier: ^6.7.1
+        version: 6.7.1
+      '@fortawesome/vue-fontawesome':
+        specifier: ^3.0.8
+        version: 3.0.8(@fortawesome/fontawesome-svg-core@6.7.1)(vue@3.5.13)
       '@vue/repl':
         specifier: ^4.4.2
         version: 4.4.2
@@ -324,6 +330,24 @@ packages:
     engines: {node: '>=12'}
     cpu: [x64]
     os: [win32]
+
+  '@fortawesome/fontawesome-common-types@6.7.1':
+    resolution: {integrity: sha512-gbDz3TwRrIPT3i0cDfujhshnXO9z03IT1UKRIVi/VEjpNHtSBIP2o5XSm+e816FzzCFEzAxPw09Z13n20PaQJQ==}
+    engines: {node: '>=6'}
+
+  '@fortawesome/fontawesome-svg-core@6.7.1':
+    resolution: {integrity: sha512-8dBIHbfsKlCk2jHQ9PoRBg2Z+4TwyE3vZICSnoDlnsHA6SiMlTwfmW6yX0lHsRmWJugkeb92sA0hZdkXJhuz+g==}
+    engines: {node: '>=6'}
+
+  '@fortawesome/free-solid-svg-icons@6.7.1':
+    resolution: {integrity: sha512-BTKc0b0mgjWZ2UDKVgmwaE0qt0cZs6ITcDgjrti5f/ki7aF5zs+N91V6hitGo3TItCFtnKg6cUVGdTmBFICFRg==}
+    engines: {node: '>=6'}
+
+  '@fortawesome/vue-fontawesome@3.0.8':
+    resolution: {integrity: sha512-yyHHAj4G8pQIDfaIsMvQpwKMboIZtcHTUvPqXjOHyldh1O1vZfH4W03VDPv5RvI9P6DLTzJQlmVgj9wCf7c2Fw==}
+    peerDependencies:
+      '@fortawesome/fontawesome-svg-core': ~1 || ~6
+      vue: '>= 3.0.0 < 4'
 
   '@iconify/types@2.0.0':
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
@@ -3399,6 +3423,21 @@ snapshots:
 
   '@esbuild/win32-x64@0.21.5':
     optional: true
+
+  '@fortawesome/fontawesome-common-types@6.7.1': {}
+
+  '@fortawesome/fontawesome-svg-core@6.7.1':
+    dependencies:
+      '@fortawesome/fontawesome-common-types': 6.7.1
+
+  '@fortawesome/free-solid-svg-icons@6.7.1':
+    dependencies:
+      '@fortawesome/fontawesome-common-types': 6.7.1
+
+  '@fortawesome/vue-fontawesome@3.0.8(@fortawesome/fontawesome-svg-core@6.7.1)(vue@3.5.13)':
+    dependencies:
+      '@fortawesome/fontawesome-svg-core': 6.7.1
+      vue: 3.5.13
 
   '@iconify/types@2.0.0': {}
 

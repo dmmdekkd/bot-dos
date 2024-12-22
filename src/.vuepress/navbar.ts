@@ -10,7 +10,7 @@ export default navbar([
   },
   {
     text: "简介",
-    icon: "user",
+    icon: "user-circle",
     link: "/portfolio",
   },
   {
@@ -19,23 +19,18 @@ export default navbar([
     link: "目录.md",
   },
   {
-    text: "YZ搭建",
+    text: "Yunzai搭建",
     icon: "robot",
     link: "/yunzai/目录.md",
   },  
   {
-    text: "Qsign",
-    icon: "chart-line",
-    link: "/yunzai/qs/",
-  },
-  {
-    text: "link",
-    icon: "external-link-alt",
-    link: "/guide/",
+    text: "刻晴机器人",
+    icon: "zap",
+    link: "/刻晴机器人/",
   },
   {
     text: "友情链接",
-    icon: "handshake",
+    icon: "link",
     link: "/yl/",
   },
   {
