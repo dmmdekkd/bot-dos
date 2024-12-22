@@ -23,8 +23,8 @@ export default hopeTheme({
   footer: `
     <div>
       <a href="/">|返回主页|</a><a href="/">|关于我|</a><br>
-      <span>Copyright © 2024 岩王帝君 版权所有 保留一切解释权利</span><br>
-      <a href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank">蜀ICP备2024093216号-2</a>
+      <span>Copyright © 2024 Sixflowers </span><br>
+      <a href="  " target="_blank">  </a>
     </div>
   `,
   displayFooter: true, // 启用页脚显示
