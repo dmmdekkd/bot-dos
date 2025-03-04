@@ -21,11 +21,15 @@ export default hopeTheme({
 
   // 页脚配置，展示版权和备案信息
   footer: `
-    <div>
-      <a href="/">|返回主页|</a><a href="/">|关于我|</a><br>
-      <span>Copyright © 2024 Sixflowers </span><br>
-      <a href="  " target="_blank">  </a>
-    </div>
+    <div class="footer">
+  <nav>
+    <a href="/" class="nav-link">[返回主页]</a>
+    <a href="/robot/" class="nav-link">[关于我]</a>
+  </nav>
+  <div class="copyright">
+    © 2024 <a href="https://beian.miit.gov.cn/" target="_blank">黔ICP备2025045336号-1</a>
+  </div>
+</div>
   `,
   displayFooter: true, // 启用页脚显示
 

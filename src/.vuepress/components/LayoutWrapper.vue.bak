@@ -1,0 +1,24 @@
+ 
+<script setup>
+import ThemeHopeLayout from 'vuepress-theme-hope/components/Layout.js'
+
+defineProps({
+  navbar: Object,
+  sidebar: Object
+})
+</script>
+
+<template>
+  <ThemeHopeLayout>
+    <!-- 强制显示导航栏 -->
+    <template #navbar>
+      <component :is="navbar" />
+    </template>
+
+    <!-- 强制显示侧边栏 -->
+    <template #sidebar>
+      <component :is="sidebar" />
+    </template>
+  </ThemeHopeLayout>
+</template>
+ 

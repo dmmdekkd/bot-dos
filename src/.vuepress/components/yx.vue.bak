@@ -1,0 +1,18 @@
+<template>
+  <div>
+    <mdui-button class="btn" @click="showSnackbar">点我</mdui-button>
+  </div>
+</template>
+
+<script>
+import 'https://unpkg.com/mdui@2/mdui.css';
+import 'https://unpkg.com/mdui@2/mdui.global.js';
+
+export default {
+  methods: {
+    showSnackbar() {
+      mdui.snackbar({ message: '点击了按钮' });
+    }
+  }
+}
+</script>

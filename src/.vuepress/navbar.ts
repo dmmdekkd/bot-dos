@@ -8,20 +8,11 @@ export default navbar([
     icon: "house",
     link: "/",
   },
+
   {
-    text: "简介",
-    icon: "user-circle",
-    link: "/portfolio",
-  },
-  {
-    text: "目录",
-    icon: "list",
-    link: "目录.md",
-  },
-  {
-    text: "Yunzai搭建",
+    text: "机器人框架",
     icon: "robot",
-    link: "/yunzai/目录.md",
+    link: "/robot/",
   },  
   {
     text: "刻晴机器人",
