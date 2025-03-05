@@ -1,0 +1,15 @@
+$font-family: 'Georgia, -apple-system, "Nimbus Roman No9 L", "PingFang SC", "Hiragino Sans GB", "Noto Serif SC", "Microsoft Yahei", "WenQuanYi Micro Hei", "ST Heiti", sans-serif';
+
+// 统一为深紫色调的颜色
+$vp-c-accent: #656AC5; // 主色调
+$vp-c-accent-bg: #575CB2; // 背景色
+$vp-c-accent-hover: #C06162; // hover效果色
+$vp-c-control: (
+  light: #f8f8f8, // 亮色主题
+  dark: #21262c  // 暗色主题
+);
+$vp-c-control-hover: #C06162; // 控件hover效果色
+$vp-c-text-mute: (
+  light: #222443, // 亮色主题的次要文本
+  dark: #A9AABC  // 暗色主题的次要文本
+);

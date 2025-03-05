@@ -7,7 +7,7 @@
   --image-hover-scale: 1.05; /* 悬停放大比例 */
   --image-hover-shadow-offset-y: 6px; /* 悬停阴影垂直偏移 */
   --image-hover-shadow-blur: 12px; /* 悬停阴影模糊半径 */
-  --image_hover_shadow-opacity: 0.3; /* 悬停阴影透明度 */
+  --image-hover-shadow-opacity: 0.3; /* 悬停阴影透明度 */
   
   --transition-time: 0.3s; /* 过渡动画时间 */
 }
@@ -62,56 +62,4 @@ img.zoom:hover {
   transform: scale(calc(var(--image-hover-scale) * 1.1)); /* 悬停时进一步放大 */
 }
 
-/* 
-.tab-group {
-  display: flex;
-  gap: 1.5rem;
-  border-bottom: 2px solid #3498db;
-  padding-bottom: 1rem;
-}
-*/
 
-.tab-item {
-  padding: 1rem 1.5rem;
-  cursor: pointer;
-  position: relative;
-  color: #34495e;
-  transition: all 0.3s ease;
-}
-
-.tab-item.active {
-  background-color: #ecf0f1;
-  border-radius: 4px 4px 0 0;
-}
-
-.tab-item::after {
-  content: "";
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background-color: #3498db;
-  transform: scaleX(0);
-  transition: transform 0.3s ease;
-}
-
-.tab-item.active::after {
-  transform: scaleX(1);
-}
-
-.icon {
-  margin-right: 0.8rem;
-  font-size: 1.2rem;
-}
-
-.content-section {
-  padding: 2rem;
-  border-radius: 4px;
-  margin-top: 2rem;
-  display: none;
-}
-
-.content-section.active {
-  display: block;
-}

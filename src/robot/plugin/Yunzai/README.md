@@ -7,7 +7,7 @@ icon:
   <div style="border-radius: 10px;overflow: hidden">
     <iframe
       title="优势"
-      :src="$withBase('https://gitee.com/yhArcadia/Yunzai-Bot-plugins-index/blob/main/README.md')"
+      :src="$withBase('https://gitee.com/yhArcadia/Yunzai-Bot-plugins-index/raw/main/README.md')"
       width="100%"
       height="500px"
       frameborder="0"

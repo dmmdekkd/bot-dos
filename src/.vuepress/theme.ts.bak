@@ -23,8 +23,8 @@ export default hopeTheme({
   footer: `
     <div class="footer">
   <nav>
-    <a href="/" class="nav-link">返回主页</a>
-    <a href="/robot/" class="nav-link">关于我</a>
+    <a href="/" class="nav-link">[返回主页]</a>
+    <a href="/robot/" class="nav-link">[关于我]</a>
   </nav>
   <div class="copyright">
     © 2024 <a href="https://beian.miit.gov.cn/" target="_blank">黔ICP备2025045336号-1</a>

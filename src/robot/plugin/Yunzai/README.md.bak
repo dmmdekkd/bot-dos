@@ -20,18 +20,3 @@ icon:
   <a class="advantage-more" href="guide/features/">更多功能</a>
 </div>
 
-<!-- 使用 iframe 嵌套 -->
-<iframe 
-  src="https://gitee.com/yhArcadia/Yunzai-Bot-plugins-index/blob/main/README.md" 
-  width="100%" 
-  height="600px"
-  style="border: none;"
-></iframe>
-
-<!-- 或使用 object 标签（不推荐，现代浏览器已弃用） -->
-<object 
-  data="https://gitee.com/yhArcadia/Yunzai-Bot-plugins-index/blob/main/README.md" 
-  type="text/html"
-  width="100%" 
-  height="600px">
-</object>

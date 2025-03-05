@@ -9,7 +9,15 @@ icon: robot
 
 @tab:active linux
 
+
+<div class="tab-group">
+  <div class="tab-item active"
+       data-target="introduction">
+
 ## 准备工作
+
+  </div>
+</div>
 
 <div id="introduction" class="content-section active">
   <h2>购买服务器</h2>
@@ -53,7 +61,15 @@ icon: robot
 
 ---
 
+
+<div class="tab-group">
+  <div class="tab-item active"
+       data-target="introduction">
+
 ## 开始安装
+
+  </div>
+</div>
 
 <div class="vp-card-container">
   <div class="hint-container tip">
@@ -62,10 +78,10 @@ icon: robot
   </div>
 </div>
 
-<div class="tab-group">
-  <div class="tab-item active"
-       data-target="introduction">
-       
+
+
+<div id="introduction" class="content-section active">
+
 ### 换源 
     
 ```bash
@@ -118,14 +134,21 @@ bash <(curl -sSL https://linuxmirrors.cn/main.sh)
 
 ![](/images/TRSS/Linux/2/4.png)
 
-  </div>
-</div>
 
-## 安装TRSS容器
+</div>  
+       
 
 <div class="tab-group">
   <div class="tab-item active"
        data-target="introduction">
+       
+## 安装TRSS容器
+       
+  </div>
+</div>       
+
+
+<div id="introduction" class="content-section active">
 
 ### 使用脚本安装
 
@@ -161,21 +184,32 @@ bash <(curl -sSL https://linuxmirrors.cn/main.sh)
 
 ![](/images/TRSS/Linux/3/1.png)
 
-  </div>
-</div>
+</div>  
 
 
-
+<div class="tab-group">
+  <div class="tab-item active"
+       data-target="introduction">
 
 ### 如何登录？
 
-咕咕中
+  </div>
+</div>
+
+- [ ] 咕咕中
 
 
 
-@tab Windows
+@tab Windows&MYSY2
 
+<div class="tab-group">
+  <div class="tab-item active"
+       data-target="introduction">
+       
 ## 准备工作
+
+  </div>
+</div>   
 
 ### 安装MYSY2
 
@@ -190,11 +224,18 @@ bash <(curl -sSL https://linuxmirrors.cn/main.sh)
   ]'
 />
 
-## 开始
 
 <div class="tab-group">
   <div class="tab-item active"
        data-target="introduction">
+
+## 开始
+
+  </div>
+</div>
+
+
+<div id="introduction" class="content-section active">
 
 ### 一直点NEXT
 
@@ -210,75 +251,23 @@ bash <(curl -sSL https://linuxmirrors.cn/main.sh)
 
 ![](/images/TRSS/Windows/1/2.png)
 
+</div>  
+
+<div class="tab-group">
+  <div class="tab-item active"
+       data-target="introduction">
+
 ## 启动命令
+
+  </div>
+</div>   
 
    ```bash
    tsab
    ```
-
-  </div>
-</div>
-
 
 @tab Termux
 
 <!-- tab 3 内容 -->
 
 :::
-
-
-<style>
-/* 
-.tab-group {
-  display: flex;
-  gap: 1.5rem;
-  border-bottom: 2px solid #3498db;
-  padding-bottom: 1rem;
-}
-*/
-
-.tab-item {
-  padding: 1rem 1.5rem;
-  cursor: pointer;
-  position: relative;
-  color: #34495e;
-  transition: all 0.3s ease;
-}
-
-.tab-item.active {
-  background-color: #ecf0f1;
-  border-radius: 4px 4px 0 0;
-}
-
-.tab-item::after {
-  content: "";
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background-color: #3498db;
-  transform: scaleX(0);
-  transition: transform 0.3s ease;
-}
-
-.tab-item.active::after {
-  transform: scaleX(1);
-}
-
-.icon {
-  margin-right: 0.8rem;
-  font-size: 1.2rem;
-}
-
-.content-section {
-  padding: 2rem;
-  border-radius: 4px;
-  margin-top: 2rem;
-  display: none;
-}
-
-.content-section.active {
-  display: block;
-}
-</style>
