@@ -21,15 +21,70 @@ export default hopeTheme({
 
   // 页脚配置，展示版权和备案信息
   footer: `
-    <div class="footer">
-  <nav>
-    <a href="/" class="nav-link">[返回主页]</a>
-    <a href="/robot/" class="nav-link">[关于我]</a>
-  </nav>
-  <div class="copyright">
-    © 2024 <a href="https://beian.miit.gov.cn/" target="_blank">黔ICP备2025045336号</a>
+      <div class="footer">
+
+ <div class="github-badge" style="text-align: center;">
+    <span class="badge-subject bg-blueviolet" style="border-radius: 5px;">
+      <span class="badge-title"></i></span>
+        <img src="https://theme-hope-assets.vuejs.press/logo.svg" 
+       style="animation: rotateIcon 2s linear infinite; width: 1em; height: 1em; vertical-align: middle;">
+      <a style="color:#fff; border-radius: 5px;" href="https://theme-hope.vuejs.press/zh/" target="_blank">主题使用VuePress Theme Hope</a>
+    </span>
   </div>
-</div>
+  
+ <div class="github-badge" style="text-align: center;">
+    <span class="badge-subject bg-blueviolet" style="border-radius: 5px;">
+      <span class="badge-title"></i></span>
+        <img src="https://img.vinua.cn/images/PPTmX.png" 
+       style="animation: rotateIcon 2s linear infinite; width: 1em; height: 1em; vertical-align: middle;">
+      <a style="color:#fff; border-radius: 5px;" href="https://vercel.com/home target="_blank">本站由Vercel托管</a>
+    </span>
+  </div>              
+      
+
+  <div class="social-media">
+    <a href="https://m.bilibili.com/space/1234796277?plat_id=1&share_from=space&share_medium=android&share_plat=android&share_session_id=7d101930-7c44-4f21-a88a-27ddae067e54&share_source=COPY&share_tag=s_i&timestamp=1741194302&unique_k=WZttXdv" target="_blank" class="social-icon">
+      <i class="fab fa-bilibili"></i>
+    </a>
+    <a href="https://qm.qq.com/q/V3ZHGWXlSe" target="_blank" class="social-icon">
+      <i class="fab fa-qq"></i>
+    </a>
+    <a href="https://github.com/dmmdekkd" target="_blank" class="social-icon">
+      <i class="fab fa-github"></i>
+    </a>
+    <a href="https://steamcommunity.com/id/3448585471" target="_blank" class="social-icon">
+      <i class="fab fa-steam"></i>
+    </a>
+        <a href="https://t.me/+JlFQsUiUtQ0zYTk1" target="_blank" class="social-icon">
+      <i class="fab fa-telegram"></i>
+    </a>
+    <a href="https://example.com/wechat" target="_blank" class="social-icon">
+      <i class="fab fa-discord"></i>
+    </a>
+    <a href="https://example.com/wechat" target="_blank" class="social-icon">
+      <i class="fab fa-twitter"></i>
+    </a>          
+  </div>
+
+
+ <div class="github-badge" style="text-align: center;">
+    <span class="badge-subject bg-blue" style="border-radius: 5px;">
+      <span class="badge-title"><i class="fas fa-home" style="animation: rotateIcon 2s linear infinite;"></i></span>
+      <a style="color:#fff; border-radius: 5px;" href="/" target="_blank">首页</a>
+    </span>
+    <span class="badge-subject bg-orange" style="border-radius: 5px;">
+      <span class="badge-title"><i class="fas fa-info-circle" style="animation: rotateIcon 2s linear infinite;"></i></span>
+      <a style="color:#fff; border-radius: 5px;" href="/关于/" target="_blank">关于</a>
+    </span>
+    <span class="badge-subject bg-brightgreen" style="border-radius: 5px;">
+      <span class="badge-title"><i class="fas fa-share-alt" style="animation: rotateIcon 2s linear infinite;"></i></span>
+      <a style="color:#fff; border-radius: 5px;" href="/友情链接/" target="_blank">友情链接</a>
+    </span>
+  </div>
+
+  <div class="copyright">
+    <a href="https://beian.miit.gov.cn/" target="_blank">黔ICP备2025045336号</a>
+  </div>
   `,
   displayFooter: true, // 启用页脚显示
 
