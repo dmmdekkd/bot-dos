@@ -27,7 +27,7 @@ export default hopeTheme({
     <a href="/robot/" class="nav-link">[关于我]</a>
   </nav>
   <div class="copyright">
-    © 2024 <a href="https://beian.miit.gov.cn/" target="_blank">黔ICP备2025045336号</a>
+    © 2024-2025 sixflowers版权所有 保留所有解释权 <a href="https://beian.miit.gov.cn/" target="_blank">黔ICP备2025045336号</a>
   </div>
 </div>
   `,
