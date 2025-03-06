@@ -159,19 +159,3 @@ img.zoom:hover {
     line-height: 1;
   }
 
-  /* 图片对齐修正 */
-  .badge-subject img {
-    vertical-align: middle;
-    margin: 0;
-  }
-
-  /* 文字对齐修正 */
-  .badge-subject a {
-    vertical-align: middle;
-    white-space: nowrap;
-  }
-
-  @keyframes rotateIcon {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
-  }
