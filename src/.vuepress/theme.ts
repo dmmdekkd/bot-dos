@@ -102,14 +102,11 @@ export default hopeTheme({
     editLink: "编辑此页", // 设置“编辑此页”的文本
   },
 
-  // 插件配置
+  // 插件配置评论
   plugins: {
     comment: {
-      provider: "Giscus", // 使用 Giscus 评论系统
-      repo: "dmmdekkd/vue-pl", // Giscus 的 GitHub 仓库
-      repoId: "R_kgDOMzAgBw", // 仓库 ID
-      category: "Announcements", // 评论分类
-      categoryId: "DIC_kwDOMzAgB84CijKN", // 分类 ID
+      provider: "Waline",
+      serverURL: "https://pinglun.sixflowers.icu/", // your server url
     },
 
     components: {

@@ -23,6 +23,11 @@ export default navbar([
   {
     text: "访客统计",
     icon: "globe",
-    link: "https://status.yunzai-bot.cn/share/EnRtewSV2otz7pZ5/yunzai-bot.cn",
+    link: "https://us.umami.is/share/4QXhLDisF8nVhC2T/sixflowers.icu",
   },
+  {
+    text: "我的博客",
+    icon: "globe",
+    link: "https://blog.sixflowers.icu/",
+  },  
 ]);

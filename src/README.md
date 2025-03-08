@@ -15,12 +15,13 @@ highlights:
 <!-- @include:  @src/../card.md -->
 ---      
 
+## 推荐
+
 <SiteInfo
-name="CodeGeeX"
-desc="免费必装的智能编程助手"
-url="https://codegeex.cn/?utm_source=pay&utm_medium=fast-request"
-logo="/img/sponsor/codegeex.svg"
-preview="/img/sponsor/codegeex-home.png"
+name="芙芙云-服务器低价上云"
+desc="芙芙网络IDC"
+url="https://www.furinaa.net/"
+preview="https://fufuidc.com/upload/fufucolorv2.png"
 style="max-width:370px"
 />
 <meta name="baidu-site-verification" content="codeva-rinD97nO2q" />

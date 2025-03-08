@@ -13,6 +13,7 @@
     <ul class="features">
       ✓ Yunzai<br>
       x AlemonJS<br>
+      ✓ 咕咕咕<br>
     </ul>
 <div class="doc-sync">
   <a href="robot/">前往</a>
