@@ -19,11 +19,7 @@ export default navbar([
     icon: "zap",
     link: "/刻晴机器人/",
   },
-  {
-    text: "友情链接",
-    icon: "link",
-    link: "/yl/",
-  },
+  
   {
     text: "访客统计",
     icon: "globe",

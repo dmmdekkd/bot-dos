@@ -37,7 +37,7 @@ export default hopeTheme({
       <span class="badge-title"></i></span>
         <img src="https://img.vinua.cn/images/PPTmX.png" 
        style="animation: rotateIcon 2s linear infinite; width: 1em; height: 1em; vertical-align: middle;">
-      <a style="color:#fff; border-radius: 5px;" href="https://vercel.com/home target="_blank">本站由Vercel托管</a>
+      <a style="color:#fff; border-radius: 5px;" href="https://vercel.com/" target="_blank">本站由Vercel托管</a>
     </span>
   </div>              
       
@@ -58,7 +58,7 @@ export default hopeTheme({
         <a href="https://t.me/+JlFQsUiUtQ0zYTk1" target="_blank" class="social-icon">
       <i class="fab fa-telegram"></i>
     </a>
-    <a href="https://example.com/wechat" target="_blank" class="social-icon">
+    <a href="https://discord.gg/ucGJ6MAT" target="_blank" class="social-icon">
       <i class="fab fa-discord"></i>
     </a>
     <a href="https://x.com/" target="_blank" class="social-icon">
