@@ -5,7 +5,7 @@ title: 主页
 heroImage: /4.jpg
 bgImageStyle:
   background-attachment: fixed
-heroText: 「一切从这里开始」
+heroText: 「织语」
 tagline: <img src="https://v1.jinrishici.com/all.svg" style="max-width:100%; ">
 actions:
 highlights:
@@ -20,7 +20,7 @@ highlights:
 <SiteInfo
 name="芙芙云-服务器低价上云"
 desc="芙芙网络IDC"
-url="https://www.furinaa.net/"
+url="https://furinaa.cn/"
 preview="https://fufuidc.com/upload/fufucolorv2.png"
 style="max-width:370px"
 />

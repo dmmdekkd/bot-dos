@@ -85,6 +85,35 @@ export default hopeTheme({
   <div class="copyright">
     <a href="https://beian.miit.gov.cn/" target="_blank">黔ICP备2025045336号</a>
   </div>
+  
+<style>
+.badge-sut {
+  display: inline-flex;
+  align-items: center;
+
+  padding: 4px 8px;
+  border-radius: 5px;
+
+  font-size: 14px;
+  color: #fff;
+}
+
+.badge-sut img {
+  /* 移除旋转动画 */
+  width: 1em;
+  height: 1em;
+  margin-right: 4px;
+  vertical-align: middle;
+}
+</style>
+
+<span class="badge-sut">
+  <img src="https://beian.mps.gov.cn/web/assets/logo01.6189a29f.png" alt="icon">
+  <a href="https://beian.mps.gov.cn/#/query/webSearch?code=52012202006168" target="_blank" style="color: ; text-decoration: none;">
+  贵公网安备52012202006168号
+  </a>
+</span>  
+  
   `,
   displayFooter: true, // 启用页脚显示
 

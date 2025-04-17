@@ -10,7 +10,7 @@ const __dirname = getDirname(import.meta.url);
 export default defineUserConfig({
   base: '/', // 配置站点的基础路径
   lang: 'zh-CN', // 设置站点的语言为简体中文
-  title: '织语文档', // 设置站点标题
+  title: 'Sixflowers', // 设置站点标题
   description: '织语文档', // 设置站点描述
   theme, // 使用自定义主题
 
