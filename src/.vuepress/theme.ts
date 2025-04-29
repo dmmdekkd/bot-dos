@@ -5,14 +5,14 @@ import { catalogPlugin } from '@vuepress/plugin-catalog'; // 导入目录插件
 import { searchProPlugin } from "vuepress-plugin-search-pro";
 
 export default hopeTheme({
-  hostname: "https://vuepress-theme-hope-docs-demo.netlify.app", // 网站的根网址
+  hostname: "#", // 网站的根网址
   author: {
-    name: "", // 作者信息
-
+    name: "",
   },
+
   iconAssets: "fontawesome-with-brands", // 使用 FontAwesome 图标库
 
-  repo: "https://github.com/dmmdekkd", // GitHub 仓库链接
+  repo: "https://github.com/dmmdekkd/bot-dos/", // GitHub 仓库链接
   docsDir: "src", // 文档源码所在目录
 
   // 导航栏与侧边栏配置

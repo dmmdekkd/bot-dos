@@ -25,31 +25,49 @@ export default sidebar({
     
   '/robot': [
     {
-      text: '机器人框架',
+      text: 'TRSS Yunzai',
       icon: 'robot',
       collapsible: true,      
       children: [
-        { text: '教程', link: '/robot/README.md' },
-        { text: '插件', link: '/robot/plugin/' },         { text: '常见问题', link: '/robot/问题/' }, 
-        { text: 'icqq签名', link: '/robot/icqq/' },                           
+        { text: 'Linux', link: '/robot/Yunzai/TRSS/linux/' },
+        { text: 'Windows&MYSY2', link: '/robot/Yunzai/TRSS/Windows&MYSY2/' },       
+        { text: 'QQBOT适配器', link: '/robot/适配器/QQbot/' },        
+        { text: 'ICQQ适配器', link: '/robot/适配器/ICQQ/' },                
       ],
-    },    
-  ], 
-  
-  '/robot/Yunzai': [
-    {
-      text: "返回机器人框架",
-      icon: "info-circle",
-      link: "/robot/",
     },  
     {
-      text: '机器人框架',
-      icon: 'zap',
+      text: '喵喵 Yunzai',
+      icon: 'robot',
       collapsible: true,      
       children: [
-        { text: 'TRSS-Yunzai', link: '/robot/Yunzai/TRSS/' },
-        { text: 'Miao-Yunzai', link: '/robot/Yunzai/Miao/' },        
-        { text: 'YunzaiJS', link: '/robot/Yunzai/YunzaiJS/' },                
+        { text: 'Miao', link: '/robot/Yunzai/Miao/' },           
+      ],
+    },  
+    {
+      text: 'YunzaiJS',
+      icon: 'robot',
+      collapsible: true,      
+      children: [   
+        { text: 'YunzaiJS', link: '/robot/Yunzai/YunzaiJS/' }, 
+      ],
+    },  
+    {
+      text: 'AlemonJS',
+      icon: 'robot',
+      collapsible: true,      
+      children: [
+        { text: 'AlemonJS', link: '/robot/AlemonJS/' },
+             
+      ],
+    },  
+    {
+      text: '其他',
+      icon: 'robot',
+      collapsible: true,      
+      children: [
+        { text: '插件', link: '/robot/plugin/' },      
+        { text: '常见问题', link: '/robot/问题/' }, 
+        { text: 'ICQQ签名', link: '/robot/icqq/' },                           
       ],
     },    
   ], 

@@ -20,7 +20,7 @@ highlights:
 <SiteInfo
 name="芙芙云-服务器低价上云"
 desc="芙芙网络IDC"
-url="https://furinaa.cn/"
+url="https://fufuidc.com/"
 preview="https://fufuidc.com/upload/fufucolorv2.png"
 style="max-width:370px"
 />
