@@ -2,15 +2,12 @@ import { hopeTheme } from "vuepress-theme-hope"; // 导入 VuePress Hope 主题
 import navbar from "./navbar.js"; // 导入自定义导航栏配置
 import sidebar from "./sidebar.js"; // 导入自定义侧边栏配置
 import { catalogPlugin } from '@vuepress/plugin-catalog'; // 导入目录插件
-import { searchProPlugin } from "vuepress-plugin-search-pro";
 
 export default hopeTheme({
-  hostname: "#", // 网站的根网址
+  hostname: "https://github.com/dmmdekkd/bot-dos/", // 网站的根网址
   author: {
     name: "",
   },
-
-  iconAssets: "fontawesome-with-brands", // 使用 FontAwesome 图标库
 
   repo: "https://github.com/dmmdekkd/bot-dos/", // GitHub 仓库链接
   docsDir: "src", // 文档源码所在目录
@@ -133,6 +130,11 @@ export default hopeTheme({
 
   // 插件配置评论
   plugins: {
+
+    icon: {
+      assets: "fontawesome-with-brands", // 使用 FontAwesome 图标库
+    },
+    '@vuepress/plugin-icon': {}, // 启用图标插件   
     comment: {
       provider: "Waline",
       serverURL: "https://pinglun.sixflowers.icu/", // your server url
@@ -142,7 +144,11 @@ export default hopeTheme({
       components: ["Badge", "VPCard", "VPBanner", "SiteInfo", "FontIcon", "Share", "VisitorCounter"], // 添加 VisitorCounter 组件
     },
 
-    mdEnhance: {
+    markdown: {
+      highlighter: {
+        type: "shiki",   // 使用 Shiki 高亮器
+        theme: ""    // 选择一个高亮主题（例如 'nord', 'material-palenight', 'dracula' 等）
+      },
       align: true, // 启用对齐功能
       attrs: true, // 启用属性支持
       component: true, // 启用 Vue 组件支持
@@ -167,7 +173,7 @@ export default hopeTheme({
       chart: true, // 启用 chart.js 图表
       footnote: true,
       echarts: true, // 启用 echarts 图表
-      flowchart: true, // 启用流程图支持
+
       gfm: true, // 启用 GitHub Flavored Markdown (支持 tex)
       math: true, // 启用 MathJax 完整支持
       mermaid: true, // 启用 Mermaid 图表
@@ -176,16 +182,13 @@ export default hopeTheme({
       },
       vuePlayground: true, // 启用 Vue Playground
       sandpack: true, // 启用 Sandpack Vue3
+      tabs: true,
     },
+    
 
     catalog: catalogPlugin({
       // 目录插件选项
-    }),
-
-    markdownTab: {
-      codeTabs: true,
-      tabs: true,
-    },    
+    }),   
 
     copyCode: {
       showInMobile: true, // 在移动设备上显示复制按钮
@@ -205,15 +208,9 @@ export default hopeTheme({
       },
     },
 
-    searchPro: searchProPlugin({
-      // 搜索插件选项
-            customFields: [
-        {
-          name: "author",
-          getter: (page) => page.frontmatter.author,
-          formatter: "作者：$content",
-        },
-      ],
-    }),
+    slimsearch: {
+      // 插件选项
+    },
+
   },
 });

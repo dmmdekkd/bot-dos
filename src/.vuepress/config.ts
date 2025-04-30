@@ -8,6 +8,7 @@ import { umamiAnalyticsPlugin } from '@vuepress/plugin-umami-analytics'; // 导�
 const __dirname = getDirname(import.meta.url);
 
 export default defineUserConfig({
+
   base: '/', // 配置站点的基础路径
   lang: 'zh-CN', // 设置站点的语言为简体中文
   title: '织语文档', // 设置站点标题
@@ -51,6 +52,11 @@ export default defineUserConfig({
       progress: true, // 显示进度条
       // 其他 Reveal.js 配置项
     },
+
+    markdown: {
+      flowchart: true,
+    },
+
   },
 
   // 合并 Vite 配置到 VuePress 配置文件中
