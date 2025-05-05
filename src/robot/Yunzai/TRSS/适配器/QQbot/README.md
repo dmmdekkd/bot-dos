@@ -1,6 +1,6 @@
 ---
 title: QQbot适配器 
-icon: robot
+icon: fa-brands fa-qq
 ---
 
 ## 安装QQBot-Plugin
@@ -19,18 +19,16 @@ icon: robot
 
 - 企业注册步骤
 ```flow
-st=>start: 创建账号
-op1=>operation: 激活邮箱
-op2=>operation: 主体认证
-e=>end: 绑定管理员
-st(right)->op1()->op2(right)->e(right)
+创建账号
+激活邮箱
+主体认证
+绑定管理员
 ```
 - 个人注册步骤
 ```flow
-st=>start: 创建账号
-op1=>operation: 激活邮箱
-e=>end: 绑定管理员
-st(right)->op1(right)->e(right)
+创建账号
+激活邮箱
+绑定管理员
 ```
 
 - 然后进行创建机器人

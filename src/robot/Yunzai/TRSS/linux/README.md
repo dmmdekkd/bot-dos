@@ -1,6 +1,6 @@
 ---
 title: Linux
-icon: robot
+icon: fa-brands fa-linux
 ---
 
 ## 准备工作
@@ -103,5 +103,10 @@ bash <(curl -sSL https://linuxmirrors.cn/main.sh)
    ```
 ![](/images/TRSS/Linux/3/1.png)
 ### 登录
-- [ICQQ](/robot/适配器/ICQQ/)
-- [QQbot](/robot/适配器/QQbot/)
+- [ICQQ](/robot/Yunzai/TRSS/适配器/ICQQ/)
+- [QQbot](/robot/Yunzai/TRSS/适配器/QQbot/)
+- [WeChat](/robot/Yunzai/TRSS/适配器/WeChat/)
+- [Telegram](/robot/Yunzai/TRSS/适配器/Telegram/)
+- [KOOK](/robot/Yunzai/TRSS/适配器/KOOK/)
+- [Discord](/robot/Yunzai/TRSS/适配器/Discord/)
+

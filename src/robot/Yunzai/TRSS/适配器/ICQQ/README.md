@@ -1,6 +1,6 @@
 ---
 title: ICQQ适配器 
-icon: robot
+icon: fa-brands fa-qq
 ---
 
 ## 安装ICQQ-Plugin
@@ -9,6 +9,9 @@ icon: robot
 ```
 ## 设置签名
 #QQ签名[签名服务器地址](/robot/icqq/)
+```#
+#QQ签名+签名服务器地址
+```
 ## 设置账号
 #QQ设置QQ号:密码[留空扫码]:登录设备[12]
 :::tip

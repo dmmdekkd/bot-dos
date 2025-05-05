@@ -1,6 +1,6 @@
 ---
 title: Windows&MYSY2
-icon: robot
+icon: fa-brands fa-windows
 ---
 
 ## 安装MYSY2
@@ -28,3 +28,10 @@ icon: robot
 ```
 tsab
 ```
+### 登录
+- [ICQQ](/robot/适配器/ICQQ/)
+- [QQbot](/robot/适配器/QQbot/)
+- [WeChat](/robot/适配器/WeChat/)
+- [Telegram](/robot/适配器/Telegram/)
+- [KOOK](/robot/适配器/KOOK/)
+- [Discord](/robot/适配器/Discord/)

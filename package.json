@@ -18,7 +18,7 @@
     "@vuepress/plugin-markdown-image": "2.0.0-rc.98",
     "@vuepress/plugin-markdown-math": "2.0.0-rc.98",
     "@vuepress/plugin-markdown-stylize": "2.0.0-rc.98",
-    "@vuepress/plugin-prismjs": "2.0.0-rc.98",
+    "@vuepress/plugin-prismjs": "2.0.0-rc.99",
     "@vuepress/plugin-revealjs": "2.0.0-rc.98",
     "@vuepress/plugin-search": "2.0.0-rc.98",
     "@vuepress/plugin-slimsearch": "2.0.0-rc.98",

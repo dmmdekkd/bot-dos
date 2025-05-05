@@ -26,13 +26,18 @@ export default sidebar({
   '/robot': [
     {
       text: 'TRSS Yunzai',
-      icon: 'robot',
+      icon: 'fa-solid fa-hat-wizard',
       collapsible: true,      
       children: [
         { text: 'Linux', link: '/robot/Yunzai/TRSS/linux/' },
-        { text: 'Windows&MYSY2', link: '/robot/Yunzai/TRSS/Windows&MYSY2/' },       
-        { text: 'QQBOT适配器', link: '/robot/适配器/QQbot/' },        
-        { text: 'ICQQ适配器', link: '/robot/适配器/ICQQ/' },                
+        { text: 'Windows&MYSY2', link: '/robot/Yunzai/TRSS/Windows&MYSY2/' },   
+        { text: 'Windows&ArchWSL', link: '/robot/Yunzai/TRSS/Windows&ArchWSL/' },           
+        { text: 'QQBOT适配器', link: '/robot/Yunzai/TRSS/适配器/QQbot/' },        
+        { text: 'ICQQ适配器', link: '/robot/Yunzai/TRSS/适配器/ICQQ/' }, 
+        { text: 'KOOK适配器', link: '/robot/Yunzai/TRSS/适配器/KOOK/' },        
+        { text: 'Discord适配器', link: '/robot/Yunzai/TRSS/适配器/Discord/' }, 
+        { text: 'Telegram适配器', link: '/robot/Yunzai/TRSS/适配器/Telegram/' },        
+        { text: 'WeChat适配器', link: '/robot/Yunzai/TRSS/适配器/WeChat/' },                        
       ],
     },  
     {
@@ -40,7 +45,7 @@ export default sidebar({
       icon: 'robot',
       collapsible: true,      
       children: [
-        { text: 'Miao', link: '/robot/Yunzai/Miao/' },           
+        { text: 'Miao Yunzai', link: '/robot/Yunzai/Miao/' },           
       ],
     },  
     {

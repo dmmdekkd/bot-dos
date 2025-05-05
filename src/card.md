@@ -12,7 +12,7 @@
     </div>
     <ul class="features">
       ✓ Yunzai<br>
-      x AlemonJS<br>
+      ✓ AlemonJS<br>
       ✓ 咕咕咕<br>
     </ul>
 <div class="doc-sync">

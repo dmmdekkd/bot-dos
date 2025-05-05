@@ -1,5 +1,5 @@
 ---
 title: TRSS Yunzai
-icon: robot
+icon: fa-solid fa-hat-wizard
 ---
 ## 通过侧边栏目录来查看教程吧~

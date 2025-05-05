@@ -4,6 +4,17 @@ import sidebar from "./sidebar.js"; // 导入自定义侧边栏配置
 import { catalogPlugin } from '@vuepress/plugin-catalog'; // 导入目录插件
 
 export default hopeTheme({
+  markdown: {
+    tabs: true,
+    codeTabs: true,
+    highlighter: {
+      type: "prismjs",   // 使用 Shiki 高亮器
+      themes: {
+        light: 'gruvbox-light',
+        dark: 'xonokai',
+      },
+    },
+  },
   hostname: "https://github.com/dmmdekkd/bot-dos/", // 网站的根网址
   author: {
     name: "",
@@ -145,10 +156,6 @@ export default hopeTheme({
     },
 
     markdown: {
-      highlighter: {
-        type: "shiki",   // 使用 Shiki 高亮器
-        theme: ""    // 选择一个高亮主题（例如 'nord', 'material-palenight', 'dracula' 等）
-      },
       align: true, // 启用对齐功能
       attrs: true, // 启用属性支持
       component: true, // 启用 Vue 组件支持
