@@ -34,5 +34,14 @@ preview="jy.png"
 style="max-width:370px"
 />
 <meta name="baidu-site-verification" content="codeva-rinD97nO2q" />
----
 
+<SiteInfo
+name="云溪 Blog"
+desc="欢迎来到云溪 Blog"
+url="https://yxyos.cn/"
+preview="yx.png"
+style="max-width:370px"
+/>
+<meta name="baidu-site-verification" content="codeva-rinD97nO2q" />
+
+---

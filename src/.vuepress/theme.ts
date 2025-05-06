@@ -5,6 +5,7 @@ import { catalogPlugin } from '@vuepress/plugin-catalog'; // 导入目录插件
 
 export default hopeTheme({
   markdown: {
+    component: true,
     tabs: true,
     codeTabs: true,
     highlighter: {
