@@ -51,21 +51,7 @@ node app
 pnpm install puppeteer
 ```
 ```
- pacman -Syu --needed \
-  
-    nss \
-  
-    atk \
-  
-    at-spi2-core \
-  
-    libxss \
-  
-    alsa-lib \
-  
-    libxshmfence \
-  
-    mesa \
+pacman -Syu chromium
 ```
 :::
 
